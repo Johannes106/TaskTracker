@@ -1,0 +1,11 @@
+<div [ngClass]="{ reminder: task.reminder}" class="task" (dblclick)="onToggle(task)">
+    <h1>
+        Task: {{task.text}} 
+        <fa-icon [ngStyle]="{'color':'red'}" [icon]="faTimes" (click)="(onDelete(task))"></fa-icon>
+    </h1>
+    <p>When: {{task.day}}</p>
+    <label class="switch">
+        Reminder: 
+        <input type="checkbox">
+    </label>
+</div>
