@@ -1,0 +1,8 @@
+<header>
+<div class="headline" title="tasktracker"><h1>Task Tracker</h1></div>
+<app-button *ngIf="showAddTask"
+        color="{{showAddTask ? 'red' : 'green'}}"
+        text="{{showAddTask ? 'close' : 'add'}}" 
+        (btnClick)="toggleAddTask()"
+        >close</app-button>
+</header>
